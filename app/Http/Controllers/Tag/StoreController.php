@@ -14,6 +14,10 @@ class StoreController extends Controller
         $data = $request->validated();
         Tag::firstOrCreate($data);
 
+<<<<<<< HEAD
         return redirect()->route('tag.index');
+=======
+        return redirect()->route('admin.tag.index');
+>>>>>>> origin/main
     }
 }

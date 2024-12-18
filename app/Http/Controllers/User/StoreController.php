@@ -5,13 +5,18 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\User\StoreRequest;
 use App\Models\User;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Storage;
+=======
+use Illuminate\Http\Request;
+>>>>>>> origin/main
 
 class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request)
     {
         $data = $request->validated();
+<<<<<<< HEAD
 
         // Check if an image is uploaded and handle the upload
         if ($request->hasFile('image')) {
@@ -38,5 +43,12 @@ class StoreController extends Controller
     {
         $user = User::findOrFail($id);
         return view('user.show', compact('user'));
+=======
+        User::firstOrCreate([
+            'email' => $data['email']
+        ], $data);
+
+        return redirect()->route('admin.user.index');
+>>>>>>> origin/main
     }
 }

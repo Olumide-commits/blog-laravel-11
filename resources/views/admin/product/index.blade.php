@@ -37,7 +37,10 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Product</th>
+<<<<<<< HEAD
                                     <th>image</th>
+=======
+>>>>>>> origin/main
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -47,11 +50,14 @@
                                         <td>
                                             <a href="{{ route('product.show', $product->id) }}">{{ $product->title }}</a>
                                         </td>
+<<<<<<< HEAD
                                         <td>
                                             <img src="{{ $product->preview_image ? asset('storage/' . $product->preview_image) : asset('https://m.media-amazon.com/images/I/81aRARl-QZL._AC_SL1500_.jpg') }}" alt="" width="50" height="50">
                                         </td>
 
 
+=======
+>>>>>>> origin/main
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -68,5 +74,8 @@
     </section>
     <!-- /.content -->
 @endsection
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main

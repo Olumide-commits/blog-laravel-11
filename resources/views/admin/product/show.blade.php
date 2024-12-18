@@ -59,7 +59,11 @@
                                     <td>{{ $product->title }}</td>
                                     <td>{{ $product->description }}</td>
                                     <td>{{ $product->content }}</td>
+<<<<<<< HEAD
                                     <td><img src="{{ $product->preview_image ? asset('storage/' . $product->preview_image) : asset('https://m.media-amazon.com/images/I/81aRARl-QZL._AC_SL1500_.jpg') }}" alt="" width="50" height="50"></td>
+=======
+                                    <td><img src="{{ asset($product->preview_image) }}" width="200"></td>
+>>>>>>> origin/main
                                     <td>{{ $product->price }}</td>
                                     <td>{{ $product->count }}</td>
                                     <td>{{ $product->category_id }}</td>

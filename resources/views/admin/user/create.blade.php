@@ -25,7 +25,11 @@
         <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
             <div class="row">
+<<<<<<< HEAD
                 <form action="{{ route('user.store') }}" method="post" enctype="multipart/form-data">
+=======
+                <form action="{{ route('user.store') }}" method="post">
+>>>>>>> origin/main
                     @csrf
                     <div class="form-group">
                         <input type="text" name="name" value="{{ old('name') }}" class="form-control"
@@ -43,8 +47,13 @@
                                placeholder="Password Confirm">
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
                         <input type="text" name="username" value="{{ old('username') }}" class="form-control"
                                placeholder="username">
+=======
+                        <input type="text" name="surname" value="{{ old('surname') }}" class="form-control"
+                               placeholder="Surname">
+>>>>>>> origin/main
                     </div>
                     <div class="form-group">
                         <input type="text" name="age" value="{{ old('age') }}" class="form-control" placeholder="Age">
@@ -61,6 +70,7 @@
                         </select>
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
                         <div class="input-group">
                             <div class="custom-file">
                                 <input name="image" type="file" class="custom-file-input" id="exampleInputFile">
@@ -79,6 +89,8 @@
                         </select>
                     </div>
                     <div class="form-group">
+=======
+>>>>>>> origin/main
                         <input type="submit" class="btn btn-primary" value="Add">
                     </div>
                 </form>

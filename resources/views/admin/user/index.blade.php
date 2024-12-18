@@ -37,13 +37,20 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>User</th>
+<<<<<<< HEAD
                                     <th>Username</th>
+=======
+                                    <th>Surname</th>
+>>>>>>> origin/main
                                     <th>Email</th>
                                     <th>Age</th>
                                     <th>Address</th>
                                     <th>Gender</th>
+<<<<<<< HEAD
                                     <th>Image</th>
                                     <th>Role</th>
+=======
+>>>>>>> origin/main
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -51,14 +58,21 @@
                                     <tr>
                                         <td>{{ $user->id }}</td>
                                         <td><a href="{{ route('user.show', $user->id) }}">{{ $user->name }}</a></td>
+<<<<<<< HEAD
                                         <td>{{ $user->username }}</td>
+=======
+                                        <td>{{ $user->surname }}</td>
+>>>>>>> origin/main
                                         <td>{{ $user->email }}</td>
                                         <td>{{ $user->age }}</td>
                                         <td>{{ $user->address }}</td>
                                         <td>{{ $user->genderTitle }}</td>
+<<<<<<< HEAD
                                         <td><img src="{{ $user->image ? asset('storage/' . $user->image) : asset('https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-554.jpg?w=2000') }}" alt="" width="50" height="50"></td>
 
                                         <td>{{ $user->role }}</td>
+=======
+>>>>>>> origin/main
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -70,6 +84,7 @@
                 </div>
                 <!-- ./col -->
             </div>
+<<<<<<< HEAD
 
     </section>
 
@@ -78,3 +93,10 @@
 
 
 <!-- <<img src="https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-554.jpg?w=2000" alt="" width="50" height="50">
+=======
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+@endsection
+>>>>>>> origin/main

@@ -13,5 +13,8 @@ class EditController extends Controller
         return view('admin.user.edit', compact('user'));
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main

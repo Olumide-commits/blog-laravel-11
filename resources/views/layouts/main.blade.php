@@ -35,7 +35,11 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                     @auth
+<<<<<<< HEAD
                         <img src="{{ auth()->user()->image }}" class="img-circle elevation-2" height="50" width="50" alt="">
+=======
+                        <img src="{{ auth()->user()->image }}" class="img-circle elevation-2" height="32" width="32" alt="user image">
+>>>>>>> origin/main
                     @else
                         <i class="fas fa-user-cog"></i>
                     @endauth
@@ -73,7 +77,11 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="/" class="brand-link">
+<<<<<<< HEAD
             <span class="brand-text font-weight-light">Admin panel</span>
+=======
+            <span class="brand-text font-weight-light">Shop admin</span>
+>>>>>>> origin/main
         </a>
 
         <!-- Sidebar -->
@@ -178,6 +186,7 @@
 <script>
     $('.colors').select2()
 </script>
+<<<<<<< HEAD
 <script>
     document.querySelector('.custom-file-input').addEventListener('change', function (e) {
         var fileName = document.getElementById("exampleInputFile").files[0].name;
@@ -187,5 +196,7 @@
 
 
 </script>
+=======
+>>>>>>> origin/main
 </body>
 </html>

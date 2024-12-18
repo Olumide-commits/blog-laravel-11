@@ -12,6 +12,10 @@ class DeleteController extends Controller
     {
         $color->delete();
 
+<<<<<<< HEAD
         return redirect()->route('color.index');
+=======
+        return redirect()->route('admin.color.index');
+>>>>>>> origin/main
     }
 }

@@ -23,12 +23,19 @@ class UpdateRequest extends FormRequest
     {
         return [
             'name' => 'required|string',
+<<<<<<< HEAD
             'username' => 'nullable|string|unique:users',
             'age' => 'nullable|integer',
             'address' => 'nullable|string',
             'gender' => 'nullable|integer',
             'role' => 'required|string|in:Admin,Guest',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+=======
+            'username' => 'nullable|string|unique',
+            'age' => 'nullable|integer',
+            'address' => 'nullable|string',
+            'gender' => 'nullable|integer',
+>>>>>>> origin/main
         ];
     }
 }

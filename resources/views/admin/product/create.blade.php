@@ -2,8 +2,11 @@
 
 @section('title', 'Product create')
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main
 @section('content')
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -50,7 +53,11 @@
                         <div class="input-group">
                             <div class="custom-file">
                                 <input name="preview_image" type="file" class="custom-file-input" id="exampleInputFile">
+<<<<<<< HEAD
                                 <label class="custom-file-label" name="preview_image" for="exampleInputFile">Choose photo</label>
+=======
+                                <label class="custom-file-label" for="exampleInputFile">Choose photo</label>
+>>>>>>> origin/main
                             </div>
                             <div class="input-group-append">
                                 <span class="input-group-text">Upload</span>

@@ -14,7 +14,11 @@
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item active"><a href="{{ route('home') }}">Home</a></li>
                         @auth
+<<<<<<< HEAD
                             <span class="breadcrumb-item active">Welcome, {{ auth()->user()->username }}!</span>
+=======
+                            <span class="breadcrumb-item active">Welcome, {{ auth()->user()->name }}!</span>
+>>>>>>> origin/main
                             <form action="/logout" method="post" class="breadcrumb-item active">
                                 @csrf
                                 <button type="submit">
@@ -42,7 +46,11 @@
                         <!-- small box -->
                         <div class="small-box bg-info">
                             <div class="inner">
+<<<<<<< HEAD
                                 <h3>54<sup style="font-size: 20px">%</sup></h3>
+=======
+                                <h3>53<sup style="font-size: 20px">%</sup></h3>
+>>>>>>> origin/main
 
                                 <p>Orders</p>
                             </div>
@@ -100,7 +108,11 @@
                         </div>
                     </div>
                 @else
+<<<<<<< HEAD
                     <p>Please, <a href="{{ route('login.user') }}" class="text-blue">get authorized</a> to see any content</p>
+=======
+                    <p>Please, <a href="{{ route('login.user') }}" class="text-blue">authorized</a> for watch any content</p>
+>>>>>>> origin/main
                 @endauth
             </div>
             <!-- /.row -->

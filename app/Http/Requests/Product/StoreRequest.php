@@ -25,7 +25,11 @@ class StoreRequest extends FormRequest
             'title' => 'required|string',
             'description' => 'required|string',
             'content' => 'required|string',
+<<<<<<< HEAD
             'preview_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+=======
+            'preview_image' => 'required',
+>>>>>>> origin/main
             'price' => 'required|integer',
             'count' => 'required|integer ',
             'is_published' => 'nullable',

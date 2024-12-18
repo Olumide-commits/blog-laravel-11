@@ -25,7 +25,11 @@
         <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
             <div class="row">
+<<<<<<< HEAD
                 <form action="{{ route('user.update', $user->id) }}" method="post" enctype="multipart/form-data">
+=======
+                <form action="{{ route('user.update', $user->id) }}" method="post">
+>>>>>>> origin/main
                     @csrf
                     @method('patch')
                     <div class="form-group">
@@ -54,6 +58,7 @@
                         </select>
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
                         <select name="role" class="custom-select form-control" id="exampleSelectBorder">
                             <option disabled selected>Role</option>
                             <option {{ $user->role == 'Guest' || old('role') == 'Guest' ? ' selected' : '' }} value="Guest">Guest</option>
@@ -73,6 +78,9 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-danger" value="Update">
+=======
+                        <input type="submit" class="btn btn-primary" value="Edit">
+>>>>>>> origin/main
                     </div>
                 </form>
             </div>

@@ -16,7 +16,11 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->text('content');
+<<<<<<< HEAD
             $table->string('preview_image')->nullable();
+=======
+            $table->string('preview_image');
+>>>>>>> origin/main
             $table->integer('price');
             $table->integer('count');
             $table->boolean('is_published')->default(true);

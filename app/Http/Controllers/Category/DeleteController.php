@@ -12,6 +12,10 @@ class DeleteController extends Controller
     {
         $category->delete();
 
+<<<<<<< HEAD
         return redirect()->route('category.index');
+=======
+        return redirect()->route('admin.category.index');
+>>>>>>> origin/main
     }
 }

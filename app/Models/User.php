@@ -11,6 +11,7 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+<<<<<<< HEAD
     protected $fillable = ['name', 'email', 'password', 'role', 'gender', 'age', 'address', 'image', 'username'];
 
     const GENDER_MALE = 0;
@@ -23,6 +24,16 @@ class User extends Authenticatable
     protected $guarded = [];
 
     public static function getGenders()
+=======
+    const GENDER_MALE = 0;
+    const GENDER_FEMALE = 1;
+
+
+    protected $table = 'users';
+    protected $guarded = false;
+
+    static function getGenders()
+>>>>>>> origin/main
     {
         return [
             self::GENDER_MALE => 'Men',
@@ -35,6 +46,7 @@ class User extends Authenticatable
         return self::getGenders()[$this->gender];
     }
 
+<<<<<<< HEAD
     public static function getRoles(): array
     {
         return [
@@ -48,6 +60,8 @@ class User extends Authenticatable
         return self::getRoles()[$this->role];
     }
 
+=======
+>>>>>>> origin/main
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -63,10 +77,20 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+=======
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+>>>>>>> origin/main
 
     public function setPasswordAttribute($password)
     {

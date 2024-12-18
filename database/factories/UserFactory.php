@@ -32,7 +32,10 @@ class UserFactory extends Factory
             'username' => $this->faker->userName(),
             'age' => $this->faker->numberBetween(19, 55),
             'gender' => $this->faker->boolean(),
+<<<<<<< HEAD
             'role' => $this->faker->boolean(),
+=======
+>>>>>>> origin/main
             'address' => $this->faker->address(),
             'image' => $this->faker->image(),
         ];

@@ -14,6 +14,10 @@ class StoreController extends Controller
         $data = $request->validated();
         Color::firstOrCreate($data);
 
+<<<<<<< HEAD
         return redirect()->route('color.index');
+=======
+        return redirect()->route('admin.color.index');
+>>>>>>> origin/main
     }
 }

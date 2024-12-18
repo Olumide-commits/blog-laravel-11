@@ -33,7 +33,11 @@
                                placeholder="Name">
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
                         <input type="submit" class="btn btn-primary" value="Update">
+=======
+                        <input type="submit" class="btn btn-primary" value="Edit">
+>>>>>>> origin/main
                     </div>
                 </form>
             </div>

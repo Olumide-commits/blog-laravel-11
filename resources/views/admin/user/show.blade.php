@@ -50,8 +50,13 @@
                                     <td>{{ $user->name }}</td>
                                 </tr>
                                 <tr>
+<<<<<<< HEAD
                                     <td>Username</td>
                                     <td>{{ $user->username }}</td>
+=======
+                                    <td>Surname</td>
+                                    <td>{{ $user->surname }}</td>
+>>>>>>> origin/main
                                 </tr>
                                 <tr>
                                     <td>Email</td>
@@ -71,7 +76,12 @@
                                 </tr>
                                 <tr>
                                     <td>Image</td>
+<<<<<<< HEAD
                                     <td><img src="{{ $user->image ? asset('storage/' . $user->image) : asset('https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-554.jpg?w=2000') }}" alt="" width="50" height="50"></td>
+=======
+                                    <td><img src="{{ $user->image }}" width="50" height="50" alt=""></td>
+                                </tr>
+>>>>>>> origin/main
                                 </tbody>
                             </table>
                         </div>
@@ -86,5 +96,8 @@
     </section>
     <!-- /.content -->
 @endsection
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main

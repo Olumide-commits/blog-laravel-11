@@ -14,9 +14,13 @@ class UpdateController extends Controller
     {
         $data = $request->validated();
 
+<<<<<<< HEAD
         if ($request->hasFile('preview_image')) {
             $data['preview_image'] = $request->file('preview_image')->store('products', 'public');
         }
+=======
+        $data['preview_image'] = Storage::disk('public')->put('/images', $data['preview_image']);
+>>>>>>> origin/main
 
         $tagsIds = $data['tags'];
         $colorsIds = $data['colors'];

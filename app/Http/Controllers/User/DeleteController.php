@@ -12,7 +12,11 @@ class DeleteController extends Controller
     {
         $user->delete();
 
+<<<<<<< HEAD
         return redirect()->route('user.index');
 
+=======
+        return redirect()->route('admin.user.index');
+>>>>>>> origin/main
     }
 }
